@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="4" ignored="0" total="6" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="100326" started-at="2026-11-01T22:53:40Z" finished-at="2026-11-01T22:55:21Z">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@79ca92b9]" name="LoginErrorValidation" class="rahulshettyacademy.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18]" name="submitOrder" class="rahulshettyacademy.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@78047b92]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="100326" started-at="2026-11-01T22:53:40Z" finished-at="2026-11-01T22:55:21Z">
+      <class name="rahulshettyacademy.tests.SubmitOrderTest">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18]" name="launchApplication" is-config="true" duration-ms="7566" started-at="2026-11-01T22:54:31Z" finished-at="2026-11-01T22:54:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="FAIL" signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18]" name="submitOrder" duration-ms="2202" started-at="2026-11-01T22:54:39Z" data-provider="getData" finished-at="2026-11-01T22:54:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iamking@000, product=ZARA COAT 3, email=anshika@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn btn-custom"> is not clickable at point (1486,26) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'bharathis-MBP', ip: '2600:4040:a293:2f00:f150:b390:681b:69b3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '27.0.1', java.version: '1.8.0_511'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [30a472d0-0839-40ce-894a-67ebebce29a5, clickElement {id=60d0ca31-e199-40b8-9697-dce28071c9ae}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50126, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on MAC (30a472d0-0839-40ce-894a-67ebebce29a5)] -> css selector: [routerlink*='cart']]
+Session ID: 30a472d0-0839-40ce-894a-67ebebce29a5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn btn-custom"> is not clickable at point (1486,26) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'bharathis-MBP', ip: '2600:4040:a293:2f00:f150:b390:681b:69b3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '27.0.1', java.version: '1.8.0_511'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [30a472d0-0839-40ce-894a-67ebebce29a5, clickElement {id=60d0ca31-e199-40b8-9697-dce28071c9ae}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50126, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on MAC (30a472d0-0839-40ce-894a-67ebebce29a5)] -> css selector: [routerlink*='cart']]
+Session ID: 30a472d0-0839-40ce-894a-67ebebce29a5
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy23.click(Unknown Source)
+at rahulshettyacademy.AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:50)
+at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18]" name="tearDown" is-config="true" duration-ms="466" started-at="2026-11-01T22:54:41Z" finished-at="2026-11-01T22:54:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18]" name="launchApplication" is-config="true" duration-ms="7834" started-at="2026-11-01T22:54:41Z" finished-at="2026-11-01T22:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="FAIL" signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18]" name="submitOrder" duration-ms="2135" started-at="2026-11-01T22:54:49Z" data-provider="getData" finished-at="2026-11-01T22:54:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn btn-custom"> is not clickable at point (1486,26) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'bharathis-MBP', ip: '2600:4040:a293:2f00:f150:b390:681b:69b3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '27.0.1', java.version: '1.8.0_511'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5c6c0b4f-0e2a-4adf-9467-6088cfa102b8, clickElement {id=b9c4f847-682e-4469-97f7-c5e889deaeac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50156, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on MAC (5c6c0b4f-0e2a-4adf-9467-6088cfa102b8)] -> css selector: [routerlink*='cart']]
+Session ID: 5c6c0b4f-0e2a-4adf-9467-6088cfa102b8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn btn-custom"> is not clickable at point (1486,26) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'bharathis-MBP', ip: '2600:4040:a293:2f00:f150:b390:681b:69b3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '27.0.1', java.version: '1.8.0_511'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5c6c0b4f-0e2a-4adf-9467-6088cfa102b8, clickElement {id=b9c4f847-682e-4469-97f7-c5e889deaeac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50156, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on MAC (5c6c0b4f-0e2a-4adf-9467-6088cfa102b8)] -> css selector: [routerlink*='cart']]
+Session ID: 5c6c0b4f-0e2a-4adf-9467-6088cfa102b8
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy23.click(Unknown Source)
+at rahulshettyacademy.AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:50)
+at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18]" name="tearDown" is-config="true" duration-ms="471" started-at="2026-11-01T22:54:51Z" finished-at="2026-11-01T22:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18]" name="OrderHistoryTest" duration-ms="0" started-at="2026-11-01T22:54:52Z" depends-on-methods="rahulshettyacademy.tests.SubmitOrderTest.submitOrder" finished-at="2026-11-01T22:54:52Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SubmitOrderTest.OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SubmitOrderTest.OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+      </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
+      <class name="rahulshettyacademy.tests.ErrorValidationsTest">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@79ca92b9]" name="launchApplication" is-config="true" duration-ms="8322" started-at="2026-11-01T22:54:52Z" finished-at="2026-11-01T22:55:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@79ca92b9]" name="LoginErrorValidation" duration-ms="1257" started-at="2026-11-01T22:55:00Z" finished-at="2026-11-01T22:55:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@79ca92b9]" name="tearDown" is-config="true" duration-ms="505" started-at="2026-11-01T22:55:01Z" finished-at="2026-11-01T22:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@79ca92b9]" name="launchApplication" is-config="true" duration-ms="8264" started-at="2026-11-01T22:55:02Z" finished-at="2026-11-01T22:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="FAIL" signature="ProductErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@79ca92b9]" name="ProductErrorValidation" duration-ms="10240" started-at="2026-11-01T22:55:10Z" finished-at="2026-11-01T22:55:20Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'bharathis-MBP', ip: '2600:4040:a293:2f00:f150:b390:681b:69b3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '27.0.1', java.version: '1.8.0_511'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50218, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 3a2c17a3-9053-41a1-96fe-5b8e254d22c3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'bharathis-MBP', ip: '2600:4040:a293:2f00:f150:b390:681b:69b3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '27.0.1', java.version: '1.8.0_511'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50218, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 3a2c17a3-9053-41a1-96fe-5b8e254d22c3
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at rahulshettyacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:37)
+at rahulshettyacademy.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:37)
+at rahulshettyacademy.tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@79ca92b9]" name="tearDown" is-config="true" duration-ms="476" started-at="2026-11-01T22:55:20Z" finished-at="2026-11-01T22:55:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- rahulshettyacademy.tests.ErrorValidationsTest -->
+      <class name="cucumber.TestNGTestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@78047b92]" name="setUpClass" is-config="true" duration-ms="810" started-at="2026-11-01T22:53:40Z" finished-at="2026-11-01T22:53:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7a083b96]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@78047b92]" name="runScenario" duration-ms="49434" started-at="2026-11-01T22:53:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-11-01T22:54:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Test of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'bharathis-MBP', ip: '2600:4040:a293:2f00:f150:b390:681b:69b3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '27.0.1', java.version: '1.8.0_511'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50034, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 1196d9df-3428-4159-8b84-caea205d9216]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'bharathis-MBP', ip: '2600:4040:a293:2f00:f150:b390:681b:69b3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '27.0.1', java.version: '1.8.0_511'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50034, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 1196d9df-3428-4159-8b84-caea205d9216
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at rahulshettyacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:37)
+at rahulshettyacademy.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:37)
+at rahulshettyacademy.stepDefinitions.StepDefinitionImpl.i_add_product_to_cart(StepDefinitionImpl.java:42)
+at ✽.I add product ZARA COAT 3 to Cart(file:///Users/bharathisubramanian/Downloads/SeleniumFrameworkDesign/src/test/java/cucumber/SubmitOrder.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@78047b92]" name="tearDownClass" is-config="true" duration-ms="58" started-at="2026-11-01T22:54:31Z" finished-at="2026-11-01T22:54:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

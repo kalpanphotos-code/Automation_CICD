@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num attn">4</td><td class="num">100,326</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">cucumber.TestNGTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1793573621802</td><td rowspan="1">49434</td></tr><tr class="failedodd"><td rowspan="1">rahulshettyacademy.tests.ErrorValidationsTest</td><td><a href="#m1">ProductErrorValidation</a></td><td rowspan="1">1793573710572</td><td rowspan="1">10240</td></tr><tr class="failedeven"><td rowspan="2">rahulshettyacademy.tests.SubmitOrderTest</td><td><a href="#m2">submitOrder</a></td><td rowspan="2">1793573689569</td><td rowspan="2">2135</td></tr><tr class="failedeven"><td><a href="#m3">submitOrder</a></td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">rahulshettyacademy.tests.SubmitOrderTest</td><td><a href="#m4">OrderHistoryTest</a></td><td rowspan="1">1793573692182</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">rahulshettyacademy.tests.ErrorValidationsTest</td><td><a href="#m5">LoginErrorValidation</a></td><td rowspan="1">1793573700507</td><td rowspan="1">1257</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">cucumber.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Positive Test of Submitting the order&quot;</td><td>&quot;Purchase the order from Ecommerce Website&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;bharathis-MBP&apos;, ip: &apos;2600:4040:a293:2f00:f150:b390:681b:69b3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;27.0.1&apos;, java.version: &apos;1.8.0_511&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50034, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 1196d9df-3428-4159-8b84-caea205d9216
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at rahulshettyacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:37)
+	at rahulshettyacademy.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:37)
+	at rahulshettyacademy.stepDefinitions.StepDefinitionImpl.i_add_product_to_cart(StepDefinitionImpl.java:42)
+	at ✽.I add product ZARA COAT 3 to Cart(file:///Users/bharathisubramanian/Downloads/SeleniumFrameworkDesign/src/test/java/cucumber/SubmitOrder.feature:13)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">rahulshettyacademy.tests.ErrorValidationsTest#ProductErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;bharathis-MBP&apos;, ip: &apos;2600:4040:a293:2f00:f150:b390:681b:69b3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;27.0.1&apos;, java.version: &apos;1.8.0_511&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50218, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 3a2c17a3-9053-41a1-96fe-5b8e254d22c3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at rahulshettyacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:37)
+	at rahulshettyacademy.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:37)
+	at rahulshettyacademy.tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:37)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">rahulshettyacademy.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; is not clickable at point (1486,26) because another element &lt;div class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot;&gt; obscures it
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;bharathis-MBP&apos;, ip: &apos;2600:4040:a293:2f00:f150:b390:681b:69b3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;27.0.1&apos;, java.version: &apos;1.8.0_511&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5c6c0b4f-0e2a-4adf-9467-6088cfa102b8, clickElement {id=b9c4f847-682e-4469-97f7-c5e889deaeac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50156, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on MAC (5c6c0b4f-0e2a-4adf-9467-6088cfa102b8)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
+Session ID: 5c6c0b4f-0e2a-4adf-9467-6088cfa102b8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at rahulshettyacademy.AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:50)
+	at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:46)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">rahulshettyacademy.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iamking@000, product=ZARA COAT 3, email=anshika@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; is not clickable at point (1486,26) because another element &lt;div class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot;&gt; obscures it
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;bharathis-MBP&apos;, ip: &apos;2600:4040:a293:2f00:f150:b390:681b:69b3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;27.0.1&apos;, java.version: &apos;1.8.0_511&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [30a472d0-0839-40ce-894a-67ebebce29a5, clickElement {id=60d0ca31-e199-40b8-9697-dce28071c9ae}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 159.0, moz:accessibilityChecks: false, moz:buildID: 20261022150525, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 27.0.0, moz:processID: 50126, moz:profile: /var/folders/h_/cvdnf49s5zv..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on MAC (30a472d0-0839-40ce-894a-67ebebce29a5)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
+Session ID: 30a472d0-0839-40ce-894a-67ebebce29a5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at rahulshettyacademy.AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:50)
+	at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:46)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">rahulshettyacademy.tests.SubmitOrderTest#OrderHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method SubmitOrderTest.OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@8909f18] depends on not successfully finished methods
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">rahulshettyacademy.tests.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
